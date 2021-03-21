@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Family book</title>    
+</head>
+<body>
+<center>   
+<h1>Family book</h1>
+<img id="album" src ="61zTGIEvQoL.jpg" width=500px >
+<p id="names">Family</p>
+<button type="button" onclick="nextslide()">Next</button>
+ <script>
+var members_names = ["Mom","Dad","Avneesh","Me,Reyansh","Rutvika","Dhruvika","My grandfather","BadiMummy","My grandmother","BABA"];
+var images = ["1616306471920.jpg","1616306571050.jpg","1616306724697.jpg","1616306757912.jpg","1616306807946.jpg","1616306854958.jpg","IMG_20200308_160605.jpg","IMG_20200823_153100.jpg","IMG-20180129-WA0031.jpg","IMG-20180129-WA0033.jpg"];
+var i=0;
+function nextslide(){
+    document.getElementById("names").innerHTML = members_names[i];
+    document.getElementById("album").src = images[i];    
+i++;
+}
+ </script>
+ </center>   
+</body>
+</html>
